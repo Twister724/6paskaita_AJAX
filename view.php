@@ -22,7 +22,8 @@ mysqli_close($conn);
 	<?php
 		foreach ($pirkejai as $pirk) {
 			echo "Vardas " .$pirk['Name'] . "<br/>"
-			."Pavarde " .$pirk['Surname'] . "<br/>";
+			."Pavarde " .$pirk['Surname'] . "<br/>"
+			."<a href='delete.php?name=$pirk[Name]'>Delete</a>";
 		}
 
 	?>
